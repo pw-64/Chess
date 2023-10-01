@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 30px;
+}
+#board {
+  width: fit-content;
+  border-collapse: collapse;
+}
+#board td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+#board td.pointer {
+  cursor: pointer;
+}
+#board td.highlight {
+  background: #2d9300 !important;
+  cursor: pointer;
+}
+#board td img {
+  width: 50px;
+  height: 50px;
+}
+#board tr:nth-of-type(2n) td:nth-of-type(2n) {
+  background: #bebebe;
+}
+#board tr:nth-of-type(2n) td:nth-of-type(2n-1) {
+  background: #595959;
+}
+#board tr:nth-of-type(2n-1) td:nth-of-type(2n) {
+  background: #595959;
+}
+#board tr:nth-of-type(2n-1) td:nth-of-type(2n-1) {
+  background: #bebebe;
+}
+#winner {
+  color: green;
+}
+/*# sourceMappingURL=styles.css.map */
